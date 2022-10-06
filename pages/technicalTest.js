@@ -7,9 +7,9 @@ module.exports = {
     PhoneNumber: {name: 'username'}
   },
 
-  loginButton:{
-    buttonLogin: {css: 'button.mw-ripple-effect.btn.rounded.text-sm.relative.overflow-hidden.w-full.btn-filled.text-neutral-1000.bg-primary-1.uppercase.qa-login-button'}
-  },
+  // loginButton:{
+  //   buttonLogin: {css: 'button.mw-ripple-effect.btn.rounded.text-sm.relative.overflow-hidden.w-full.btn-filled.text-neutral-1000.bg-primary-1.uppercase.qa-login-button'}
+  // },
 
   otpSmsButton:{
     buttonOtpSms: {css: '.qa-otp-.text-xs.text-primary-1.cursor-pointer.qa-otp-sms-button-button'}
@@ -96,8 +96,9 @@ module.exports = {
   },
 
   clickLogin(){
-    I.click(this.loginButton);
-    I.wait(3);
+    const login = locate('button').withText('Masuk');
+    I.waitForElement({ xpath: login.value }, 30);
+    I.click({ xpath: login.value });
   },
 
   clickOtpSms(){

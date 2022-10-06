@@ -17,7 +17,7 @@ When('I input valid phone number on login page', () => {
 When('I click button Masuk on login page', () => {
   // From "features\technicalTest.feature" {"line":8,"column":5}
   technicalTestPage.clickLogin();
-  I.waitForClickable(3);
+  I.wait(15);
 });
 
 When('I click button Kirim Via SMS on verification method', () => {

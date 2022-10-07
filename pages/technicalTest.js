@@ -24,7 +24,7 @@ module.exports = {
   },
 
   searchButton:{
-    buttonSearch: {css: 'button.mw-ripple-effect.btn.rounded.text-sm.relative.overflow-hidden.btn-filled.btn-sm.text-neutral-1000.bg-primary-1.w-min-0.btn-search'}
+    buttonSearch: {css: 'fieldset[class="text-input border-none relative p-0"] div[class="option-wrapper"]'}
   },
 
   productDetailCard:{

@@ -35,6 +35,7 @@ When('I click button Masuk on login page', () => {
 When('I input Alexandre Christie AC 9205 MC LBRBA Chronograph Men on search field', () => {
   // From "features\technicalTest.feature" {"line":10,"column":5}
   technicalTestPage.fillSearchingProduct('Alexandre Christie AC 9205 MC LBRBA Chronograph Men');
+  I.wait(3);
 });
 
 When('I click button search', () => {

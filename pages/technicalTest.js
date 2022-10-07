@@ -7,6 +7,10 @@ module.exports = {
     PhoneNumber: {name: 'username'}
   },
 
+  loginPasswordField:{
+    Password: {name: 'password'}
+  },
+
   // loginButton:{
   //   buttonLogin: {css: 'button.mw-ripple-effect.btn.rounded.text-sm.relative.overflow-hidden.w-full.btn-filled.text-neutral-1000.bg-primary-1.uppercase.qa-login-button'}
   // },
@@ -16,11 +20,11 @@ module.exports = {
   },
 
   searchingField:{
-    fieldSearch: {css: 'input[data-testid=searchBar-test]'}
+    fieldSearch: {css: 'input.tracking-wide.border-none.bg-transparent.w-full.relative.text-sm.placeholder-neutral-500.text-neutral-300.search-bar.h-10.pt-6.pb-2'}
   },
 
   searchButton:{
-    buttonSearch: {css: 'button[data-testid=option-right]'}
+    buttonSearch: {css: 'button.mw-ripple-effect.btn.rounded.text-sm.relative.overflow-hidden.btn-filled.btn-sm.text-neutral-1000.bg-primary-1.w-min-0.btn-search'}
   },
 
   productDetailCard:{
@@ -93,6 +97,10 @@ module.exports = {
   
   fillLogin(value){
     I.fillField(this.loginPhoneNumberField.PhoneNumber, value);
+  },
+
+  fillPassword(value){
+    I.fillField(this.loginPasswordField.Password, value);
   },
 
   clickLogin(){

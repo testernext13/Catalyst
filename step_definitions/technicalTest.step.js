@@ -8,23 +8,29 @@ Given('I am on login page', () => {
   I.wait(10);
 });
 
-When('I input valid phone number on login page', () => {
+When('I input valid email on login page', () => {
   // From "features\technicalTest.feature" {"line":7,"column":5}
-  technicalTestPage.fillLogin('085310015464');
+  technicalTestPage.fillLogin('baypark2494@gmail.com');
+  I.wait(5);
+});
+
+When('I input valid password', () => {
+  // From "features\technicalTest.feature" {"line":7,"column":5}
+  technicalTestPage.fillPassword('2494B@ypark');
   I.wait(5);
 });
 
 When('I click button Masuk on login page', () => {
   // From "features\technicalTest.feature" {"line":8,"column":5}
   technicalTestPage.clickLogin();
-  I.wait(15);
-});
-
-When('I click button Kirim Via SMS on verification method', () => {
-  // From "features\technicalTest.feature" {"line":9,"column":5}
-  technicalTestPage.clickOtpSms();
   I.wait(10);
 });
+
+// When('I click button Kirim Via SMS on verification method', () => {
+//   // From "features\technicalTest.feature" {"line":9,"column":5}
+//   technicalTestPage.clickOtpSms();
+//   I.wait(10);
+// });
 
 When('I input Alexandre Christie AC 9205 MC LBRBA Chronograph Men on search field', () => {
   // From "features\technicalTest.feature" {"line":10,"column":5}

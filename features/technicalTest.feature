@@ -4,9 +4,10 @@ Feature: Order flow
 
 Scenario: User success order with voucher
     Given I am on login page
-    And I input valid phone number on login page
+    And I input valid email on login page
+    And I input valid password
     And I click button Masuk on login page
-    And I click button Kirim Via SMS on verification method
+    # And I click button Kirim Via SMS on verification method
     And I input Alexandre Christie AC 9205 MC LBRBA Chronograph Men on search field
     And I click button search
     And I click product detail

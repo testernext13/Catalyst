@@ -26,12 +26,6 @@ When('I click button Masuk on login page', () => {
   I.wait(10);
 });
 
-// When('I click button Kirim Via SMS on verification method', () => {
-//   // From "features\technicalTest.feature" {"line":9,"column":5}
-//   technicalTestPage.clickOtpSms();
-//   I.wait(10);
-// });
-
 When('I input Alexandre Christie AC 9205 MC LBRBA Chronograph Men on search field', () => {
   // From "features\technicalTest.feature" {"line":10,"column":5}
   technicalTestPage.fillSearchingProduct('Alexandre Christie AC 9205 MC LBRBA Chronograph Men');

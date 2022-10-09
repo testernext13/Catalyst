@@ -15,9 +15,9 @@ module.exports = {
   //   buttonLogin: {css: 'button.mw-ripple-effect.btn.rounded.text-sm.relative.overflow-hidden.w-full.btn-filled.text-neutral-1000.bg-primary-1.uppercase.qa-login-button'}
   // },
 
-  otpSmsButton:{
-    buttonOtpSms: {css: '.qa-otp-.text-xs.text-primary-1.cursor-pointer.qa-otp-sms-button-button'}
-  },
+  // otpSmsButton:{
+  //   buttonOtpSms: {css: '.qa-otp-.text-xs.text-primary-1.cursor-pointer.qa-otp-sms-button-button'}
+  // },
 
   searchingField:{
     fieldSearch: {css: 'input.tracking-wide.border-none.bg-transparent.w-full.relative.text-sm.placeholder-neutral-500.text-neutral-300.search-bar.h-10.pt-6.pb-2'}
